@@ -1,4 +1,4 @@
-#Shred: S-driver
+# Shred: S-driver
 
 This is a linux module for a char device dmm, which means domain memory manager.
 It should be noted that **it is only tested on Raspberry Pi 2 Model B, Cortex-A7, Linux Kernel version 4.1.15**. 

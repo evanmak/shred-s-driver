@@ -3,7 +3,7 @@
 This is a linux module for a char device dmm, which means domain memory manager.
 It should be noted that **it is only tested on Raspberry Pi 2 Model B, Cortex-A7, Linux Kernel version 4.1.15**. 
 
-Also, DACR is deprecated in ARMv8. Interested user can find (Here)[https://gitlab.mpi-sws.org/vahldiek/erim] an alternarive approach of in-process memory isolation based on intel memory protection key (MPK).
+Also, DACR is deprecated in ARMv8. Interested user can find [Here](https://gitlab.mpi-sws.org/vahldiek/erim) an alternarive approach of in-process memory isolation based on intel memory protection key (MPK).
 
 ## Publication
 

@@ -1,0 +1,12 @@
+This document discuss the complex concurrency problems in dmm.c.
+
+1. when we open/close a s_pool, we need to acquire lock first.
+   suppose on core0, thread0 has opened s_pool0, but context switch happen, thread1 comes and start executing,
+   later thread1 triger domain fault when enter s_pool1. and thread1 needs to close active s_pools on core0.
+
+   currently, thread0 is scheduled to core1, and resumes executing, and triger domain fault, thread0 needs to
+   reopen s_pool0, but now thread1 may closing it on core0.
+
+   that's why we need to acquire lock when open/close a s_pool to make all sections inside s_pool in consistant
+   state.
+

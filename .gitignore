@@ -1,0 +1,11 @@
+dmm
+dmm.pub
+*.o
+*.swp
+*.mod.c
+*.pub
+*.order
+*.symvers
+*.ko
+*.dump
+*.cmd
